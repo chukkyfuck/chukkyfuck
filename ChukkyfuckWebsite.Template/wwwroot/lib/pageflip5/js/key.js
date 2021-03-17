@@ -1,1 +1,0 @@
-﻿var Key = { Copyright: "Copyright © 2021 chucky fuck", Key: "$A$450gGM9k$$PgWPXYk"};

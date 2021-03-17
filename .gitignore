@@ -1,9 +1,0 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-/.vs
-/ChukkyfuckWebsite.Generator/bin/Debug/netcoreapp3.1
-/ChukkyfuckWebsite.Generator/obj
-/ChukkyfuckWebsite.Template/bin/Debug/netcoreapp3.1
-/ChukkyfuckWebsite.Template/obj
