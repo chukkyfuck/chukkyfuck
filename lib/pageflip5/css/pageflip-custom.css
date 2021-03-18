@@ -1,4 +1,5 @@
-#pageflip {
+#pageflip 
+{
 	width: 100%;
 	height: 100vh;
 	background: #121212; /*#ececec*/
@@ -8,22 +9,27 @@
     /*transition: height .3s;*/
 }
 
-@media(max-width: 992px) {
-	#pageflip {
+@media(max-width: 992px) 
+{
+	#pageflip 
+    {
         height: calc(100vh - 100px);
 	}
 }
 
 
 
-#pf-pagerin {
+#pf-pagerin 
+{
     font-family: inherit; /*-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"*/
 }
-#pf-stage {
+#pf-stage 
+{
 	background: #121212;
 }
 
-.pf-page-content{
+.pf-page-content
+{
 	width: 100%;
 	height: 100%;
 }
@@ -32,7 +38,8 @@
 /* Controls layout/animation/hover fx ----------------------------------- */
 
 
-#pf-pagerin {
+#pf-pagerin 
+{
     width: 140px;
 	height: 26px;
 	padding: 0px;
@@ -47,13 +54,15 @@
     margin-left: 5px;
 }
 
-.pf-control-bar-button {
+.pf-control-bar-button 
+{
     cursor: pointer;
 }
 
 .pf-control-bar-button g,
-.pf-control-bar-pager g {
-	fill: #faf600;
+.pf-control-bar-pager g 
+{
+	fill: #ffcb21;
 	-webkit-transition: fill 0.2s;
 	-moz-transition: fill 0.2s;
 	-o-transition: fill 0.2s;
@@ -72,5 +81,5 @@
 
 .pf-control-bar-button:not(.pf-disabled):hover g 
 {
-    fill:#faf600
+	fill: #ffcb21
 }
