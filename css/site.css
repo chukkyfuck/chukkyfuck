@@ -6,3 +6,31 @@
 .fa-inverse {
     color: #121212;
 }
+
+
+
+/* Navbars */
+
+.topbar {
+    min-height: 100px;
+    max-height: 100px;
+    transition: margin-top .3s;
+    margin-top: -100px;
+}
+
+.sidebar {
+    min-width: 100px;
+    max-width: 100px;
+    transition: margin-left .3s;
+    margin-left: 0;
+}
+
+@media(max-width: 992px) {
+    .topbar {
+        margin-top: 0;
+    }
+    
+    .sidebar {
+        margin-left: -100px
+    }
+}
