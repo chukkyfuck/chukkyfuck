@@ -41,8 +41,8 @@
 
         return {
             src: $image.attr("src"),
-            w: $image[0].naturalWidth,
-            h: $image[0].naturalHeight,
+            w: $image.attr("width"),
+            h: $image.attr("height"),
             //title: $caption.html(),
             image: $image[0]
         };
