@@ -7,9 +7,15 @@
     color: #121212;
 }
 
-
+.bg-img {
+    background: #666;
+}
 
 /* Navbars */
+/*
+.topbar {
+    height: 100px;
+}*/
 
 .topbar {
     min-height: 100px;
