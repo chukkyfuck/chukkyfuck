@@ -11,6 +11,14 @@
     background: #666;
 }
 
+.bg-oma {
+    background-image: url("/img/oma.jpg");    
+    background-position-x: 75%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
 /* Navbars */
 /*
 .topbar {
@@ -18,25 +26,25 @@
 }*/
 
 .topbar {
-    min-height: 100px;
-    max-height: 100px;
+    min-height: 110px;
+    max-height: 110px;
     transition: margin-top .3s;
-    margin-top: -100px;
+    margin-top: -110px;
 }
 
 .sidebar {
-    min-width: 100px;
-    max-width: 100px;
+    min-width: 354px;
+    max-width: 354px;
     transition: margin-left .3s;
     margin-left: 0;
 }
 
-@media(max-width: 992px) {
+@media(max-width: 1200px) {
     .topbar {
         margin-top: 0;
     }
-    
+
     .sidebar {
-        margin-left: -100px
+        margin-left: -354px
     }
 }
