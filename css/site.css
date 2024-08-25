@@ -12,39 +12,60 @@
 }
 
 .bg-oma {
-    background-image: url("/img/oma.jpg");    
+    background-image: url("/img/oma.jpg");
     background-position-x: 75%;
     background-position-y: center;
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover;
+    transition: height .3s;
+    transition-delay: 0s;
+    height: 100vh;
+}
+
+a.btn-img > img {
+    transition: opacity 0.3s;
+}
+
+a.btn-img:hover > img {
+    opacity: 0.75;
+}
+
+.list-footer > .list-inline-item:not(:last-child) 
+{
+    margin-right: 1.5rem;
 }
 
 /* Navbars */
-/*
 .topbar {
-    height: 100px;
-}*/
-
-.topbar {
-    min-height: 110px;
-    max-height: 110px;
+    min-height: 125px;
+    max-height: 125px;
     transition: margin-top .3s;
-    margin-top: -110px;
+    transition-delay: 0s;
+    margin-top: -125px;
+    overflow-x: hidden;
 }
 
 .sidebar {
-    min-width: 354px;
-    max-width: 354px;
+    min-width: 250px;
+    max-width: 250px;
     transition: margin-left .3s;
+    transition-delay: .3s;
     margin-left: 0;
 }
 
 @media(max-width: 1200px) {
     .topbar {
+        transition-delay: .3s;
         margin-top: 0;
     }
 
     .sidebar {
-        margin-left: -354px
+        transition-delay: 0s;
+        margin-left: -250px;
+    }
+
+    .bg-oma {
+        transition-delay: .3s;
+        height: calc(100vh - 125px);
     }
 }
