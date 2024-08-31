@@ -37,17 +37,17 @@ a.btn-img:hover > img {
 
 /* Navbars */
 .topbar {
-    min-height: 125px;
-    max-height: 125px;
+    min-height: 100px;
+    max-height: 100px;
     transition: margin-top .3s;
     transition-delay: 0s;
-    margin-top: -125px;
+    margin-top: -100px;
     overflow-x: hidden;
 }
 
 .sidebar {
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 200px;
+    max-width: 200px;
     transition: margin-left .3s;
     transition-delay: .3s;
     margin-left: 0;
@@ -61,11 +61,11 @@ a.btn-img:hover > img {
 
     .sidebar {
         transition-delay: 0s;
-        margin-left: -250px;
+        margin-left: -200px;
     }
 
     .bg-oma {
         transition-delay: .3s;
-        height: calc(100vh - 125px);
+        height: calc(100vh - 100px);
     }
 }
