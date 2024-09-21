@@ -1,24 +1,14 @@
 ﻿$(function()
 {
-    var $masonry = $("#masonry");
+    var $gallery = $("#gallery");
     var $photoSwipe = $(".pswp");
     var gallery;
     
-    $masonry.masonry(
-        {
-            columnWidth: ".masonry-sizer",
-            itemSelector: ".masonry-item",
-            percentPosition: true,
-            transitionDuration: 0
-        });
-
-    var items = $masonry.find(".figure").map(function(index, figure)
+    var items = $gallery.find("img").map(function(index, image)
     {
-        var $figure = $(figure);
-        var $image = $figure.find("img");
-        //var $caption = $figure.find(".figure-caption");
+        var $image = $(image);
 
-        $figure.click(function()
+        $image.click(function()
         {
             var options =
             {
