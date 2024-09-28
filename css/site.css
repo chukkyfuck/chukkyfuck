@@ -30,8 +30,24 @@ a.btn-img:hover > img {
     opacity: 0.75;
 }
 
-.list-footer > .list-inline-item:not(:last-child) 
-{
+a.masonry-filter > img {
+    transition: opacity 0.3s;
+    opacity: 0.5;
+}
+
+a.masonry-filter:hover > img {    
+    opacity: 0.75;
+}
+
+a.masonry-filter.active > img {    
+    opacity: 1.0;
+}
+a.masonry-filter.active:hover > img {
+    opacity: 0.75;
+}
+
+
+.list-footer > .list-inline-item:not(:last-child) {
     margin-right: 1.5rem;
 }
 

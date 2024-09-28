@@ -9,12 +9,22 @@
         
         $link = $(event.currentTarget);
 
-        if ($link.hasClass("active")) 
+        if ($filters.not(".active").length > 0)
         {
-            $link.removeClass("active");
-        } else {
-            $link.addClass("active");
+            if ($link.hasClass("active"))
+            {
+                $link.removeClass("active");
+                $filters.addClass("active");
+            } else {
+                $filters.removeClass("active");
+                $link.addClass("active");
+            }
         }
+        else
+        {
+            $filters.removeClass("active");
+            $link.addClass("active");
+        }              
 
         updateIsotopeFilters();
     }
